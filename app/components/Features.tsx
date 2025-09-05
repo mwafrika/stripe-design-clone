@@ -26,20 +26,34 @@ export default function Features() {
                       </svg>
                     </div>
                     <span className="text-sm font-medium text-blue-600">
-                      Analysis
+                      Synthesis
                     </span>
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Synthesize customer feedback into actionable insights
+                    Turn customer conversations into product decisions
                   </h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    Transform raw conversations, surveys, and feedback into
-                    structured insights, themes, and evidence you can act on
-                    with AI-powered analysis.
+                    Sque synthesizes interviews, surveys, and feedback into
+                    structured insights, themes, and evidence you can act on.
+                    Transform qualitative data into quantitative insights.
                   </p>
-                  <button className="bg-[#0a2540] hover:bg-[#081d32] text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200">
-                    Start with Analysis
+                  <button className="bg-[#635bff] hover:bg-[#081d32] px-4 py-2 text-white rounded-full font-semibold transition-colors duration-200 whitespace-nowrap shadow-sm cursor-pointer">
+                    Start with Sque
+                    <svg
+                      className="ml-1 h-3 w-3 inline"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </button>
+
                   <div className="mt-6 pt-6 border-t border-gray-100">
                     <p className="text-sm text-gray-500 mb-3">See also</p>
                     <div className="space-y-2">
@@ -47,19 +61,19 @@ export default function Features() {
                         href="#"
                         className="block text-sm text-blue-600 hover:text-blue-700"
                       >
-                        Themes for pattern recognition
+                        Customer interviews analysis
                       </a>
                       <a
                         href="#"
                         className="block text-sm text-blue-600 hover:text-blue-700"
                       >
-                        Sentiment analysis for emotional insights
+                        Survey data synthesis
                       </a>
                       <a
                         href="#"
                         className="block text-sm text-blue-600 hover:text-blue-700"
                       >
-                        Trends for longitudinal analysis
+                        Feedback theme extraction
                       </a>
                     </div>
                   </div>
@@ -73,7 +87,7 @@ export default function Features() {
                     <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
                     <div className="w-3 h-3 bg-green-400 rounded-full"></div>
                     <div className="ml-4 text-sm text-gray-500">
-                      Analysis Dashboard
+                      Synthesis Dashboard
                     </div>
                   </div>
                   <div className="space-y-4">
@@ -81,22 +95,22 @@ export default function Features() {
                       <div className="flex items-center gap-3 mb-2">
                         <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                         <span className="text-sm font-medium text-gray-700">
-                          Processing Feedback
+                          Processing Interviews
                         </span>
                       </div>
                       <div className="text-xs text-gray-500">
-                        1,247 responses analyzed
+                        47 customer interviews analyzed
                       </div>
                     </div>
                     <div className="bg-green-50 rounded-lg p-4">
                       <div className="flex items-center gap-3 mb-2">
                         <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                         <span className="text-sm font-medium text-gray-700">
-                          Themes Identified
+                          Insights Generated
                         </span>
                       </div>
                       <div className="text-xs text-gray-500">
-                        12 themes, 89% confidence
+                        23 actionable insights ready
                       </div>
                     </div>
                   </div>
@@ -123,19 +137,33 @@ export default function Features() {
                       </svg>
                     </div>
                     <span className="text-sm font-medium text-green-600">
-                      Collaboration
+                      Roadmaps
                     </span>
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Share insights across your team
+                    Build evidence-based product roadmaps
                   </h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    Collaborate on findings, share structured reports, and align
-                    your team around customer insights with real-time
-                    collaboration tools.
+                    Create data-driven product decisions backed by real customer
+                    evidence. Sque helps you prioritize features based on actual
+                    user needs and feedback patterns.
                   </p>
-                  <button className="bg-[#0a2540] hover:bg-[#081d32] text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200">
-                    Start with Collaboration
+
+                  <button className="bg-[#635bff] hover:bg-[#081d32] px-4 py-2 text-white rounded-full font-semibold transition-colors duration-200 whitespace-nowrap shadow-sm cursor-pointer">
+                    Start with Evidence
+                    <svg
+                      className="ml-1 h-3 w-3 inline"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </button>
                   <div className="mt-6 pt-6 border-t border-gray-100">
                     <p className="text-sm text-gray-500 mb-3">See also</p>
@@ -144,19 +172,19 @@ export default function Features() {
                         href="#"
                         className="block text-sm text-blue-600 hover:text-blue-700"
                       >
-                        Reports for structured insights
+                        Product roadmap planning
                       </a>
                       <a
                         href="#"
                         className="block text-sm text-blue-600 hover:text-blue-700"
                       >
-                        Dashboards for real-time monitoring
+                        Feature prioritization
                       </a>
                       <a
                         href="#"
                         className="block text-sm text-blue-600 hover:text-blue-700"
                       >
-                        Integrations for seamless workflows
+                        User story mapping
                       </a>
                     </div>
                   </div>
@@ -169,7 +197,7 @@ export default function Features() {
                     <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
                     <div className="w-3 h-3 bg-green-400 rounded-full"></div>
                     <div className="ml-4 text-sm text-gray-500">
-                      Team Collaboration
+                      Roadmap Builder
                     </div>
                   </div>
                   <div className="space-y-4">
@@ -177,22 +205,22 @@ export default function Features() {
                       <div className="flex items-center gap-3 mb-2">
                         <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                         <span className="text-sm font-medium text-gray-700">
-                          Shared Insights
+                          Features Prioritized
                         </span>
                       </div>
                       <div className="text-xs text-gray-500">
-                        5 team members active
+                        12 features ranked by evidence
                       </div>
                     </div>
                     <div className="bg-purple-50 rounded-lg p-4 animate-pulse">
                       <div className="flex items-center gap-3 mb-2">
                         <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
                         <span className="text-sm font-medium text-gray-700">
-                          Live Comments
+                          Roadmap Updated
                         </span>
                       </div>
                       <div className="text-xs text-gray-500">
-                        3 new comments
+                        Q2 roadmap ready
                       </div>
                     </div>
                   </div>
@@ -219,20 +247,35 @@ export default function Features() {
                       </svg>
                     </div>
                     <span className="text-sm font-medium text-purple-600">
-                      Real-time
+                      Patterns
                     </span>
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Get instant analysis as feedback comes in
+                    Uncover hidden patterns in customer data
                   </h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    Process customer feedback in real-time with AI-powered
-                    analysis that provides instant insights and recommendations
-                    for immediate action.
+                    Discover recurring themes, sentiment patterns, and
+                    behavioral insights across all your customer touchpoints.
+                    Sque&apos;s AI identifies patterns humans might miss.
                   </p>
-                  <button className="bg-[#0a2540] hover:bg-[#081d32] text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200">
-                    Start with Real-time
+
+                  <button className="bg-[#635bff] hover:bg-[#081d32] px-4 py-2 text-white rounded-full font-semibold transition-colors duration-200 whitespace-nowrap shadow-sm cursor-pointer">
+                    Start with Patterns
+                    <svg
+                      className="ml-1 h-3 w-3 inline"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </button>
+
                   <div className="mt-6 pt-6 border-t border-gray-100">
                     <p className="text-sm text-gray-500 mb-3">See also</p>
                     <div className="space-y-2">
@@ -240,19 +283,19 @@ export default function Features() {
                         href="#"
                         className="block text-sm text-blue-600 hover:text-blue-700"
                       >
-                        Live dashboards for monitoring
+                        Sentiment analysis
                       </a>
                       <a
                         href="#"
                         className="block text-sm text-blue-600 hover:text-blue-700"
                       >
-                        Instant notifications for critical insights
+                        Behavioral pattern detection
                       </a>
                       <a
                         href="#"
                         className="block text-sm text-blue-600 hover:text-blue-700"
                       >
-                        Automated alert systems
+                        Trend identification
                       </a>
                     </div>
                   </div>
@@ -266,7 +309,7 @@ export default function Features() {
                     <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
                     <div className="w-3 h-3 bg-green-400 rounded-full"></div>
                     <div className="ml-4 text-sm text-gray-500">
-                      Real-time Processing
+                      Pattern Detection
                     </div>
                   </div>
                   <div className="space-y-4">
@@ -274,22 +317,22 @@ export default function Features() {
                       <div className="flex items-center gap-3 mb-2">
                         <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></div>
                         <span className="text-sm font-medium text-gray-700">
-                          Live Analysis
+                          Pattern Analysis
                         </span>
                       </div>
                       <div className="text-xs text-gray-500">
-                        Processing 23 new responses
+                        Analyzing sentiment patterns
                       </div>
                     </div>
                     <div className="bg-yellow-50 rounded-lg p-4">
                       <div className="flex items-center gap-3 mb-2">
                         <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
                         <span className="text-sm font-medium text-gray-700">
-                          Instant Alerts
+                          Themes Discovered
                         </span>
                       </div>
                       <div className="text-xs text-gray-500">
-                        2 critical insights detected
+                        8 recurring themes found
                       </div>
                     </div>
                   </div>
@@ -317,19 +360,33 @@ export default function Features() {
                       </svg>
                     </div>
                     <span className="text-sm font-medium text-orange-600">
-                      Evidence
+                      Scale
                     </span>
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Make data-driven decisions with confidence
+                    Scale customer research across your organization
                   </h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    Back your product decisions with structured evidence and
-                    themes derived from actual customer conversations and
-                    feedback data.
+                    Democratize customer insights across teams. Sque makes it
+                    easy for everyone to access, understand, and act on customer
+                    research without needing a PhD in data science.
                   </p>
-                  <button className="bg-[#0a2540] hover:bg-[#081d32] text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200">
-                    Start with Evidence
+
+                  <button className="bg-[#635bff] hover:bg-[#081d32] px-4 py-2 text-white rounded-full font-semibold transition-colors duration-200 whitespace-nowrap shadow-sm cursor-pointer">
+                    Start with Scale
+                    <svg
+                      className="ml-1 h-3 w-3 inline"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </button>
                   <div className="mt-6 pt-6 border-t border-gray-100">
                     <p className="text-sm text-gray-500 mb-3">See also</p>
@@ -338,19 +395,19 @@ export default function Features() {
                         href="#"
                         className="block text-sm text-blue-600 hover:text-blue-700"
                       >
-                        Confidence scoring for insights
+                        Team collaboration tools
                       </a>
                       <a
                         href="#"
                         className="block text-sm text-blue-600 hover:text-blue-700"
                       >
-                        Evidence trails for decisions
+                        Knowledge sharing
                       </a>
                       <a
                         href="#"
                         className="block text-sm text-blue-600 hover:text-blue-700"
                       >
-                        Audit logs for transparency
+                        Research democratization
                       </a>
                     </div>
                   </div>
@@ -364,7 +421,7 @@ export default function Features() {
                     <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
                     <div className="w-3 h-3 bg-green-400 rounded-full"></div>
                     <div className="ml-4 text-sm text-gray-500">
-                      Evidence Dashboard
+                      Scale Dashboard
                     </div>
                   </div>
                   <div className="space-y-4">
@@ -372,22 +429,22 @@ export default function Features() {
                       <div className="flex items-center gap-3 mb-2">
                         <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
                         <span className="text-sm font-medium text-gray-700">
-                          Confidence Score
+                          Team Access
                         </span>
                       </div>
                       <div className="text-xs text-gray-500">
-                        94% evidence strength
+                        15 team members onboarded
                       </div>
                     </div>
                     <div className="bg-green-50 rounded-lg p-4 animate-pulse">
                       <div className="flex items-center gap-3 mb-2">
                         <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                         <span className="text-sm font-medium text-gray-700">
-                          Data Sources
+                          Knowledge Shared
                         </span>
                       </div>
                       <div className="text-xs text-gray-500">
-                        8 sources verified
+                        47 insights shared this week
                       </div>
                     </div>
                   </div>
@@ -415,19 +472,33 @@ export default function Features() {
                       </svg>
                     </div>
                     <span className="text-sm font-medium text-red-600">
-                      Reports
+                      Integrations
                     </span>
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Generate comprehensive actionable reports
+                    Integrate with your existing workflow
                   </h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    Create detailed reports with clear recommendations, next
-                    steps, and strategic insights that your product team can
-                    immediately implement.
+                    Connect Sque with your favorite tools. Import data from
+                    Slack, Notion, Airtable, and more. Export insights directly
+                    to your product management and design tools.
                   </p>
-                  <button className="bg-[#0a2540] hover:bg-[#081d32] text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200">
-                    Start with Reports
+
+                  <button className="bg-[#635bff] hover:bg-[#081d32] px-4 py-2 text-white rounded-full font-semibold transition-colors duration-200 whitespace-nowrap shadow-sm cursor-pointer">
+                    Start with Integrations
+                    <svg
+                      className="ml-1 h-3 w-3 inline"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </button>
                   <div className="mt-6 pt-6 border-t border-gray-100">
                     <p className="text-sm text-gray-500 mb-3">See also</p>
@@ -436,19 +507,19 @@ export default function Features() {
                         href="#"
                         className="block text-sm text-blue-600 hover:text-blue-700"
                       >
-                        Custom report templates
+                        Slack integration
                       </a>
                       <a
                         href="#"
                         className="block text-sm text-blue-600 hover:text-blue-700"
                       >
-                        Automated report scheduling
+                        Notion sync
                       </a>
                       <a
                         href="#"
                         className="block text-sm text-blue-600 hover:text-blue-700"
                       >
-                        Executive summary generation
+                        API access
                       </a>
                     </div>
                   </div>
@@ -462,7 +533,7 @@ export default function Features() {
                     <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
                     <div className="w-3 h-3 bg-green-400 rounded-full"></div>
                     <div className="ml-4 text-sm text-gray-500">
-                      Report Generator
+                      Integration Hub
                     </div>
                   </div>
                   <div className="space-y-4">
@@ -470,22 +541,22 @@ export default function Features() {
                       <div className="flex items-center gap-3 mb-2">
                         <div className="w-2 h-2 bg-red-500 rounded-full"></div>
                         <span className="text-sm font-medium text-gray-700">
-                          Generating Report
+                          Connected Tools
                         </span>
                       </div>
                       <div className="text-xs text-gray-500">
-                        47 recommendations ready
+                        Slack, Notion, Airtable synced
                       </div>
                     </div>
                     <div className="bg-blue-50 rounded-lg p-4 animate-pulse">
                       <div className="flex items-center gap-3 mb-2">
                         <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                         <span className="text-sm font-medium text-gray-700">
-                          Export Options
+                          Data Flowing
                         </span>
                       </div>
                       <div className="text-xs text-gray-500">
-                        PDF, Excel, PowerPoint
+                        156 insights exported today
                       </div>
                     </div>
                   </div>
@@ -512,40 +583,38 @@ export default function Features() {
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                The backbone for customer insights
+                Turn every customer conversation into product intelligence
               </h2>
               <p className="text-xl text-gray-300 mb-12 leading-relaxed">
-                Sque makes understanding customers as easy and programmable as
-                analyzing data. Our platform processes millions of conversations
-                each year for ambitious businesses of all sizes.
+                Sque transforms qualitative customer feedback into quantitative
+                insights. From interviews to surveys, we help product teams make
+                data-driven decisions backed by real customer evidence.
               </p>
 
               {/* Stats Grid */}
               <div className="grid grid-cols-2 gap-8">
                 <div>
-                  <div className="text-3xl font-bold text-white mb-2">
-                    500K+
-                  </div>
+                  <div className="text-3xl font-bold text-white mb-2">10K+</div>
                   <div className="text-sm text-gray-300">
-                    Conversations analyzed daily
+                    Customer interviews analyzed
                   </div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-white mb-2">
-                    99.9%
-                  </div>
-                  <div className="text-sm text-gray-300">Analysis accuracy</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-white mb-2">50+</div>
+                  <div className="text-3xl font-bold text-white mb-2">95%</div>
                   <div className="text-sm text-gray-300">
-                    Languages supported
+                    Insight accuracy rate
                   </div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-white mb-2">24/7</div>
+                  <div className="text-3xl font-bold text-white mb-2">500+</div>
                   <div className="text-sm text-gray-300">
-                    Real-time processing
+                    Product teams using Sque
+                  </div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-white mb-2">2x</div>
+                  <div className="text-sm text-gray-300">
+                    Faster product decisions
                   </div>
                 </div>
               </div>
@@ -556,10 +625,10 @@ export default function Features() {
                 <div className="bg-gray-900 rounded-2xl p-8 border border-gray-700">
                   <div className="text-center mb-6">
                     <h3 className="text-lg font-semibold text-white mb-2">
-                      Global Coverage
+                      Customer Research Platform
                     </h3>
                     <p className="text-sm text-gray-400">
-                      Processing insights worldwide
+                      Transforming conversations into insights
                     </p>
                   </div>
 
