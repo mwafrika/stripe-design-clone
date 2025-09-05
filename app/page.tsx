@@ -8,6 +8,12 @@ const BusinessTypes = dynamic(() => import("./components/BusinessTypes"), {
 const Enterprise = dynamic(() => import("./components/Enterprise"), {
   ssr: true,
 });
+const Growth = dynamic(() => import("./components/Growth"), {
+  ssr: true,
+});
+const Developers = dynamic(() => import("./components/Developers"), {
+  ssr: true,
+});
 
 export default function Home() {
   return (
@@ -16,6 +22,8 @@ export default function Home() {
       <Features />
       <BusinessTypes />
       <Enterprise />
+      <Growth />
+      <Developers />
     </main>
   );
 }
