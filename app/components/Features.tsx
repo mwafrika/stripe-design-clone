@@ -1,7 +1,7 @@
-import React from 'react';
-import FeatureCard from './FeatureCard';
-import DashboardVisual from './DashboardVisual';
-import { features } from '../constants/features';
+import React from "react";
+import FeatureCard from "./FeatureCard";
+import DashboardVisual from "./DashboardVisual";
+import { features } from "../constants/features";
 
 const Features: React.FC = () => {
   return (
@@ -31,11 +31,14 @@ const Features: React.FC = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-[#0a2540] relative overflow-hidden" aria-labelledby="global-scale-heading">
+      <section
+        className="pt-64 pb-16 bg-[#0a2540] relative overflow-hidden"
+        aria-labelledby="global-scale-heading"
+      >
         <div
           className="absolute top-0 left-0 w-full h-full bg-white"
           style={{
-            clipPath: "polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%)",
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 5%, 0% 20%)",
           }}
         />
 
@@ -47,38 +50,46 @@ const Features: React.FC = () => {
                   Global scale
                 </span>
               </div>
-              <h2 id="global-scale-heading" className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Turn every customer conversation into product intelligence
+              <h2
+                id="global-scale-heading"
+                className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
+              >
+                The backbone for global commerce
               </h2>
               <p className="text-xl text-gray-300 mb-12 leading-relaxed">
-                Sque transforms qualitative customer feedback into quantitative
-                insights. From interviews to surveys, we help product teams make
-                data-driven decisions backed by real customer evidence.
+                Sque makes moving money as easy and programmable as moving data.
+                Our teams are based in offices around the world and we process
+                hundreds of billions of dollars each year for ambitious
+                businesses of all sizes.
               </p>
 
               <div className="grid grid-cols-2 gap-8">
                 <div>
-                  <div className="text-3xl font-bold text-white mb-2">10K+</div>
+                  <div className="text-3xl font-bold text-white mb-2">
+                    500M+
+                  </div>
                   <div className="text-sm text-gray-300">
-                    Customer interviews analyzed
+                    API requests per day, peaking at 13,000 requests a second.
                   </div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-white mb-2">95%</div>
+                  <div className="text-3xl font-bold text-white mb-2">
+                    99.999%
+                  </div>
                   <div className="text-sm text-gray-300">
-                    Insight accuracy rate
+                    historical uptime for Sque services.
                   </div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-white mb-2">500+</div>
+                  <div className="text-3xl font-bold text-white mb-2">90%</div>
                   <div className="text-sm text-gray-300">
-                    Product teams using Sque
+                    of U.S. adults have bought from businesses using Sque.
                   </div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-white mb-2">2x</div>
+                  <div className="text-3xl font-bold text-white mb-2">135+</div>
                   <div className="text-sm text-gray-300">
-                    Faster product decisions
+                    currencies and payment methods supported.
                   </div>
                 </div>
               </div>
@@ -86,58 +97,193 @@ const Features: React.FC = () => {
 
             <div className="relative">
               <div className="relative z-10">
-                <div className="bg-gray-900 rounded-2xl p-8 border border-gray-700">
-                  <div className="text-center mb-6">
-                    <h3 className="text-lg font-semibold text-white mb-2">
-                      Customer Research Platform
-                    </h3>
-                    <p className="text-sm text-gray-400">
-                      Transforming conversations into insights
-                    </p>
-                  </div>
+                <div className="bg-[#1a2332] rounded-2xl p-8 border border-gray-700">
+                  <div className="relative w-full h-80 bg-[#0f1419] rounded-lg overflow-hidden">
+                    {/* World Map with dots */}
+                    <svg
+                      className="absolute inset-0 w-full h-full"
+                      viewBox="0 0 400 200"
+                    >
+                      {/* North America */}
+                      <g className="opacity-60">
+                        <circle cx="80" cy="60" r="1" fill="#60a5fa" />
+                        <circle cx="85" cy="65" r="1" fill="#60a5fa" />
+                        <circle cx="90" cy="70" r="1" fill="#60a5fa" />
+                        <circle cx="75" cy="75" r="1" fill="#60a5fa" />
+                        <circle cx="95" cy="55" r="1" fill="#60a5fa" />
+                        <circle cx="100" cy="80" r="1" fill="#60a5fa" />
+                        <circle cx="70" cy="85" r="1" fill="#60a5fa" />
+                        <circle cx="105" cy="70" r="1" fill="#60a5fa" />
+                        <circle cx="65" cy="90" r="1" fill="#60a5fa" />
+                        <circle cx="110" cy="60" r="1" fill="#60a5fa" />
+                      </g>
 
-                  <div className="relative w-full h-64 bg-gray-800 rounded-lg overflow-hidden">
-                    <div className="absolute top-8 left-12 w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
-                    <div className="absolute top-16 right-16 w-2 h-2 bg-green-400 rounded-full animate-pulse delay-300"></div>
-                    <div className="absolute top-24 left-1/3 w-2 h-2 bg-purple-400 rounded-full animate-pulse delay-700"></div>
-                    <div className="absolute bottom-12 left-1/4 w-2 h-2 bg-yellow-400 rounded-full animate-pulse delay-1000"></div>
-                    <div className="absolute bottom-8 right-1/3 w-2 h-2 bg-red-400 rounded-full animate-pulse delay-500"></div>
+                      {/* Europe */}
+                      <g className="opacity-60">
+                        <circle cx="180" cy="50" r="1" fill="#60a5fa" />
+                        <circle cx="185" cy="55" r="1" fill="#60a5fa" />
+                        <circle cx="190" cy="60" r="1" fill="#60a5fa" />
+                        <circle cx="175" cy="65" r="1" fill="#60a5fa" />
+                        <circle cx="195" cy="45" r="1" fill="#60a5fa" />
+                        <circle cx="200" cy="70" r="1" fill="#60a5fa" />
+                        <circle cx="170" cy="75" r="1" fill="#60a5fa" />
+                        <circle cx="205" cy="50" r="1" fill="#60a5fa" />
+                        <circle cx="165" cy="80" r="1" fill="#60a5fa" />
+                        <circle cx="210" cy="40" r="1" fill="#60a5fa" />
+                      </g>
 
-                    <svg className="absolute inset-0 w-full h-full" aria-hidden="true">
-                      <line
-                        x1="48"
-                        y1="32"
-                        x2="64"
-                        y2="64"
-                        stroke="#3B82F6"
-                        strokeWidth="1"
-                        opacity="0.6"
+                      {/* Asia */}
+                      <g className="opacity-60">
+                        <circle cx="280" cy="60" r="1" fill="#60a5fa" />
+                        <circle cx="285" cy="65" r="1" fill="#60a5fa" />
+                        <circle cx="290" cy="70" r="1" fill="#60a5fa" />
+                        <circle cx="275" cy="75" r="1" fill="#60a5fa" />
+                        <circle cx="295" cy="55" r="1" fill="#60a5fa" />
+                        <circle cx="300" cy="80" r="1" fill="#60a5fa" />
+                        <circle cx="270" cy="85" r="1" fill="#60a5fa" />
+                        <circle cx="305" cy="70" r="1" fill="#60a5fa" />
+                        <circle cx="265" cy="90" r="1" fill="#60a5fa" />
+                        <circle cx="310" cy="60" r="1" fill="#60a5fa" />
+                      </g>
+
+                      {/* South America */}
+                      <g className="opacity-60">
+                        <circle cx="120" cy="140" r="1" fill="#60a5fa" />
+                        <circle cx="125" cy="145" r="1" fill="#60a5fa" />
+                        <circle cx="130" cy="150" r="1" fill="#60a5fa" />
+                        <circle cx="115" cy="155" r="1" fill="#60a5fa" />
+                        <circle cx="135" cy="135" r="1" fill="#60a5fa" />
+                        <circle cx="140" cy="160" r="1" fill="#60a5fa" />
+                        <circle cx="110" cy="165" r="1" fill="#60a5fa" />
+                        <circle cx="145" cy="150" r="1" fill="#60a5fa" />
+                        <circle cx="105" cy="170" r="1" fill="#60a5fa" />
+                        <circle cx="150" cy="140" r="1" fill="#60a5fa" />
+                      </g>
+
+                      {/* Africa */}
+                      <g className="opacity-60">
+                        <circle cx="200" cy="120" r="1" fill="#60a5fa" />
+                        <circle cx="205" cy="125" r="1" fill="#60a5fa" />
+                        <circle cx="210" cy="130" r="1" fill="#60a5fa" />
+                        <circle cx="195" cy="135" r="1" fill="#60a5fa" />
+                        <circle cx="215" cy="115" r="1" fill="#60a5fa" />
+                        <circle cx="220" cy="140" r="1" fill="#60a5fa" />
+                        <circle cx="190" cy="145" r="1" fill="#60a5fa" />
+                        <circle cx="225" cy="120" r="1" fill="#60a5fa" />
+                        <circle cx="185" cy="150" r="1" fill="#60a5fa" />
+                        <circle cx="230" cy="110" r="1" fill="#60a5fa" />
+                      </g>
+
+                      {/* Australia */}
+                      <g className="opacity-60">
+                        <circle cx="320" cy="150" r="1" fill="#60a5fa" />
+                        <circle cx="325" cy="155" r="1" fill="#60a5fa" />
+                        <circle cx="330" cy="160" r="1" fill="#60a5fa" />
+                        <circle cx="315" cy="165" r="1" fill="#60a5fa" />
+                        <circle cx="335" cy="145" r="1" fill="#60a5fa" />
+                        <circle cx="340" cy="170" r="1" fill="#60a5fa" />
+                        <circle cx="310" cy="175" r="1" fill="#60a5fa" />
+                        <circle cx="345" cy="150" r="1" fill="#60a5fa" />
+                        <circle cx="305" cy="180" r="1" fill="#60a5fa" />
+                        <circle cx="350" cy="140" r="1" fill="#60a5fa" />
+                      </g>
+
+                      {/* Connection lines */}
+                      <g className="opacity-40">
+                        {/* Yellow lines */}
+                        <path
+                          d="M 80 60 Q 150 100 200 50"
+                          stroke="#fbbf24"
+                          strokeWidth="1"
+                          fill="none"
+                        />
+                        <path
+                          d="M 100 80 Q 170 120 220 70"
+                          stroke="#fbbf24"
+                          strokeWidth="1"
+                          fill="none"
+                        />
+
+                        {/* Purple lines */}
+                        <path
+                          d="M 180 50 Q 250 90 300 60"
+                          stroke="#a855f7"
+                          strokeWidth="1"
+                          fill="none"
+                        />
+                        <path
+                          d="M 200 70 Q 270 110 320 80"
+                          stroke="#a855f7"
+                          strokeWidth="1"
+                          fill="none"
+                        />
+
+                        {/* Pink lines */}
+                        <path
+                          d="M 120 140 Q 190 100 250 120"
+                          stroke="#ec4899"
+                          strokeWidth="1"
+                          fill="none"
+                        />
+                        <path
+                          d="M 140 160 Q 210 120 270 140"
+                          stroke="#ec4899"
+                          strokeWidth="1"
+                          fill="none"
+                        />
+                      </g>
+
+                      {/* Glowing markers */}
+                      <circle
+                        cx="80"
+                        cy="60"
+                        r="3"
+                        fill="#60a5fa"
+                        className="animate-pulse"
+                      >
+                        <circle cx="0" cy="0" r="1" fill="white" />
+                      </circle>
+                      <circle
+                        cx="200"
+                        cy="50"
+                        r="2"
+                        fill="#fbbf24"
+                        className="animate-pulse delay-300"
                       />
-                      <line
-                        x1="48"
-                        y1="32"
-                        x2="128"
-                        y2="96"
-                        stroke="#10B981"
-                        strokeWidth="1"
-                        opacity="0.6"
+                      <circle
+                        cx="280"
+                        cy="60"
+                        r="2"
+                        fill="#a855f7"
+                        className="animate-pulse delay-700"
                       />
-                      <line
-                        x1="64"
-                        y1="96"
-                        x2="128"
-                        y2="96"
-                        stroke="#8B5CF6"
-                        strokeWidth="1"
-                        opacity="0.6"
+                      <circle
+                        cx="120"
+                        cy="140"
+                        r="2"
+                        fill="#ec4899"
+                        className="animate-pulse delay-500"
+                      />
+                      <circle
+                        cx="320"
+                        cy="150"
+                        r="2"
+                        fill="#10b981"
+                        className="animate-pulse delay-1000"
                       />
                     </svg>
                   </div>
                 </div>
               </div>
 
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-blue-500/20 rounded-full animate-pulse" aria-hidden="true"></div>
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-green-500/20 rounded-full animate-pulse delay-1000" aria-hidden="true"></div>
+              <div
+                className="absolute -top-4 -right-4 w-20 h-20 bg-blue-500/20 rounded-full animate-pulse"
+                aria-hidden="true"
+              ></div>
+              <div
+                className="absolute -bottom-4 -left-4 w-16 h-16 bg-green-500/20 rounded-full animate-pulse delay-1000"
+                aria-hidden="true"
+              ></div>
             </div>
           </div>
         </div>
