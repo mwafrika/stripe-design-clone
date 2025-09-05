@@ -1,32 +1,109 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import FeatureCard from "./FeatureCard";
 import DashboardVisual from "./DashboardVisual";
 import { features } from "../constants/features";
 
 const Features: React.FC = () => {
+  const [currentFeatureIndex, setCurrentFeatureIndex] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const featuresSection = document.getElementById("features-section");
+      if (!featuresSection) return;
+
+      const rect = featuresSection.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      if (rect.top > windowHeight || rect.bottom < 0) return;
+
+      const sectionHeight = rect.height;
+      const scrollProgress = Math.max(
+        0,
+        Math.min(1, (windowHeight * 0.5 - rect.top) / sectionHeight)
+      );
+
+      const featureProgress = scrollProgress * features.length;
+      const newIndex = Math.min(
+        features.length - 1,
+        Math.max(0, Math.floor(featureProgress))
+      );
+
+      setCurrentFeatureIndex(newIndex);
+    };
+
+    let ticking = false;
+    const throttledHandleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", throttledHandleScroll, { passive: true });
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", throttledHandleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <section className="py-24 bg-white" aria-labelledby="features-heading">
+      <section
+        id="features-section"
+        className="py-24 bg-white"
+        aria-labelledby="features-heading"
+      >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="space-y-16">
-            {features.map((feature) => (
-              <FeatureCard
-                key={feature.id}
-                icon={feature.icon}
-                iconColor={feature.iconColor}
-                category={feature.category}
-                title={feature.title}
-                description={feature.description}
-                buttonText={feature.buttonText}
-                seeAlso={feature.seeAlso}
-                visualContent={
-                  <DashboardVisual
-                    title={feature.visual.title}
-                    items={feature.visual.items}
+            {features.map((feature, index) => {
+              const isActive = index === currentFeatureIndex;
+              const isPrevious = index === currentFeatureIndex - 1;
+              const isNext = index === currentFeatureIndex + 1;
+
+              return (
+                <div
+                  key={feature.id}
+                  className={`transition-all duration-1000 ease-in-out transform ${
+                    isActive
+                      ? "opacity-100 scale-100 translate-y-0"
+                      : isPrevious || isNext
+                      ? "opacity-60 scale-95 translate-y-4"
+                      : "opacity-20 scale-90 translate-y-8"
+                  }`}
+                  style={{
+                    transform: isActive
+                      ? "translateY(0) scale(1)"
+                      : isPrevious
+                      ? "translateY(20px) scale(0.95)"
+                      : isNext
+                      ? "translateY(-20px) scale(0.95)"
+                      : "translateY(40px) scale(0.9)",
+                  }}
+                >
+                  <FeatureCard
+                    icon={feature.icon}
+                    iconColor={feature.iconColor}
+                    category={feature.category}
+                    title={feature.title}
+                    description={feature.description}
+                    buttonText={feature.buttonText}
+                    seeAlso={feature.seeAlso}
+                    visualContent={
+                      <DashboardVisual
+                        title={feature.visual.title}
+                        items={feature.visual.items}
+                      />
+                    }
                   />
-                }
-              />
-            ))}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
