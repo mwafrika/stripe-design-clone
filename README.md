@@ -1,4 +1,4 @@
-# Sque.ai Landing Page
+# Stripe Landing Page
 
 A modern, production-ready landing page built with Next.js, TypeScript, and Tailwind CSS, inspired by Stripe's design system and customized for Sque.ai's research platform.
 
