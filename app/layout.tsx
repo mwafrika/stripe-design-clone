@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { headers } from "next/headers";
 import "./globals.css";
 import StructuredData from "./components/StructuredData";
 
@@ -86,7 +85,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const h = headers();
   const maintenance = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true";
   return (
     <html lang="en">
@@ -99,9 +97,12 @@ export default function RootLayout({
         {maintenance ? (
           <div className="grid min-h-screen place-items-center p-6">
             <div className="max-w-md text-center">
-              <h1 className="text-2xl font-semibold">We'll be right back</h1>
+              <h1 className="text-2xl font-semibold">
+                We&apos;ll be right back
+              </h1>
               <p className="mt-2 text-sm text-gray-500">
-                We're performing scheduled maintenance. Please check again soon.
+                We&apos;re performing scheduled maintenance. Please check again
+                soon.
               </p>
             </div>
           </div>

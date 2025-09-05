@@ -369,7 +369,8 @@ const Growth: React.FC = () => {
                       </div>
                       <div className="text-left">
                         <div className="inline-block bg-white text-gray-800 text-xs px-3 py-2 rounded-lg border">
-                          Sure, I'd recommend our customer research workflow.
+                          Sure, I&apos;d recommend our customer research
+                          workflow.
                         </div>
                       </div>
                       <div className="text-left">
