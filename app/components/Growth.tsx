@@ -26,7 +26,7 @@ const Growth: React.FC = () => {
 
         <div className="flex gap-8 max-w-6xl mx-auto">
           <div className="flex-1 space-y-8 mt-12">
-            <Card className="p-6 bg-gray-50">
+            <Card padding="md" className="bg-gray-50">
               <div className="space-y-4">
                 <div className="w-full bg-white rounded-lg p-4">
                   <div className="mb-4">
@@ -187,7 +187,7 @@ const Growth: React.FC = () => {
               </div>
             </Card>
 
-            <Card className="p-6">
+            <Card padding="md">
               <div className="space-y-4">
                 <div className="space-y-4">
                   <div className="space-y-3">
@@ -265,7 +265,7 @@ const Growth: React.FC = () => {
           </div>
 
           <div className="flex-1 space-y-8">
-            <Card className="p-6">
+            <Card padding="md">
               <div className="space-y-4">
                 <div className="space-y-3">
                   <div className="text-sm font-medium text-gray-900">
@@ -352,7 +352,7 @@ const Growth: React.FC = () => {
               </div>
             </Card>
 
-            <Card className="p-6">
+            <Card padding="md">
               <div className="space-y-4">
                 <div className="flex gap-4">
                   <div className="flex-1">

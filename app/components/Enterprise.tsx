@@ -105,7 +105,10 @@ const Enterprise: React.FC = () => {
           </div>
 
           <div className="relative group">
-            <Card className="relative overflow-hidden shadow-2xl transition-all duration-500 group-hover:shadow-3xl group-hover:scale-105 p-0">
+            <Card
+              padding="none"
+              className="relative overflow-hidden shadow-2xl transition-all duration-500 group-hover:shadow-3xl group-hover:scale-105"
+            >
               <div className="relative h-96 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 transition-all duration-500 group-hover:from-blue-800 group-hover:via-blue-700 group-hover:to-blue-600">
                 <div className="absolute inset-0 bg-gradient-to-t from-green-600 via-green-500 to-green-400 opacity-30 transition-all duration-500 group-hover:opacity-40"></div>
                 <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-800 to-transparent transition-all duration-500 group-hover:from-gray-900"></div>

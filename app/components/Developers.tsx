@@ -110,7 +110,10 @@ const Developers: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <Card className="p-6 bg-white/5 border-gray-600 hover:border-purple-400 transition-colors">
+          <Card
+            padding="md"
+            className="bg-white/5 border-gray-600 hover:border-purple-400 transition-colors"
+          >
             <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
               <svg
                 className="w-6 h-6 text-purple-600"
@@ -152,7 +155,10 @@ const Developers: React.FC = () => {
             </a>
           </Card>
 
-          <Card className="p-6 bg-white/5 border-gray-600 hover:border-purple-400 transition-colors">
+          <Card
+            padding="md"
+            className="bg-white/5 border-gray-600 hover:border-purple-400 transition-colors"
+          >
             <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
               <svg
                 className="w-6 h-6 text-purple-600"
@@ -194,7 +200,10 @@ const Developers: React.FC = () => {
             </a>
           </Card>
 
-          <Card className="p-6 bg-white/5 border-gray-600 hover:border-purple-400 transition-colors">
+          <Card
+            padding="md"
+            className="bg-white/5 border-gray-600 hover:border-purple-400 transition-colors"
+          >
             <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
               <svg
                 className="w-6 h-6 text-purple-600"
@@ -236,7 +245,10 @@ const Developers: React.FC = () => {
             </a>
           </Card>
 
-          <Card className="p-6 bg-white/5 border-gray-600 hover:border-purple-400 transition-colors">
+          <Card
+            padding="md"
+            className="bg-white/5 border-gray-600 hover:border-purple-400 transition-colors"
+          >
             <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
               <svg
                 className="w-6 h-6 text-purple-600"
