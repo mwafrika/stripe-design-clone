@@ -2,16 +2,22 @@
 
 import React from "react";
 import Button from "./ui/Button";
+import Icon from "./ui/Icon";
+import Section from "./ui/Section";
 
 const GetStarted: React.FC = () => {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <Section
+      className="relative overflow-hidden"
+      background="white"
+      padding="lg"
+    >
       <div
         className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-r from-purple-200 to-blue-200 opacity-30"
         style={{ clipPath: "polygon(0% 100%, 100% 100%, 100% 60%, 0% 80%)" }}
       ></div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
           <div className="lg:col-span-1">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
@@ -29,19 +35,7 @@ const GetStarted: React.FC = () => {
                 className="bg-[#00d4ff] text-white hover:bg-[#0099cc] border-none rounded-full"
               >
                 Start researching
-                <svg
-                  className="ml-2 h-4 w-4 inline"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
+                <Icon name="arrowRight" size="sm" className="ml-2 inline" />
               </Button>
               <Button
                 variant="outline"
@@ -49,19 +43,7 @@ const GetStarted: React.FC = () => {
                 className="bg-white text-gray-900 border-gray-300 hover:bg-gray-50 rounded-full"
               >
                 Talk to experts
-                <svg
-                  className="ml-2 h-4 w-4 inline"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
+                <Icon name="arrowRight" size="sm" className="ml-2 inline" />
               </Button>
             </div>
           </div>
@@ -93,19 +75,7 @@ const GetStarted: React.FC = () => {
                 className="text-[#00d4ff] hover:text-[#0099cc] font-medium inline-flex items-center"
               >
                 View pricing
-                <svg
-                  className="ml-1 h-4 w-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
+                <Icon name="arrowRight" size="sm" className="ml-1" />
               </a>
             </div>
           </div>
@@ -137,25 +107,13 @@ const GetStarted: React.FC = () => {
                 className="text-[#00d4ff] hover:text-[#0099cc] font-medium inline-flex items-center"
               >
                 Get started guide
-                <svg
-                  className="ml-1 h-4 w-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
+                <Icon name="arrowRight" size="sm" className="ml-1" />
               </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

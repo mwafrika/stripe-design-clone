@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Button from "./ui/Button";
 import Input from "./ui/Input";
+import Icon from "./ui/Icon";
 
 export default function Hero() {
   return (
@@ -121,19 +122,7 @@ export default function Hero() {
               </button>
               <Button variant="outline" size="md" className="rounded-full">
                 Contact sales
-                <svg
-                  className="ml-1 h-4 w-4 inline"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
+                <Icon name="arrowRight" size="sm" className="ml-1 inline" />
               </Button>
             </div>
           </header>
@@ -262,19 +251,7 @@ export default function Hero() {
                   className="absolute right-2 top-1/2 -translate-y-1/2"
                 >
                   Start now
-                  <svg
-                    className="ml-1 h-3 w-3 inline"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
+                  <Icon name="arrowRight" size="sm" className="ml-1 inline" />
                 </Button>
               </div>
             </div>
