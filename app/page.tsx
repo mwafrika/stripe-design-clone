@@ -17,17 +17,27 @@ const Developers = dynamic(() => import("./components/Developers"), {
 const NoCode = dynamic(() => import("./components/NoCode"), {
   ssr: true,
 });
+const GetStarted = dynamic(() => import("./components/GetStarted"), {
+  ssr: true,
+});
+const Footer = dynamic(() => import("./components/Footer"), {
+  ssr: true,
+});
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <Features />
-      <BusinessTypes />
-      <Enterprise />
-      <Growth />
-      <Developers />
-      <NoCode />
-    </main>
+    <>
+      <main>
+        <Hero />
+        <Features />
+        <BusinessTypes />
+        <Enterprise />
+        <Growth />
+        <Developers />
+        <NoCode />
+        <GetStarted />
+      </main>
+      <Footer />
+    </>
   );
 }
