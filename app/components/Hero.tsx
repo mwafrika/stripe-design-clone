@@ -1,6 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
+import Button from "./ui/Button";
+import Input from "./ui/Input";
 
 export default function Hero() {
   return (
@@ -116,7 +119,7 @@ export default function Hero() {
                   />
                 </svg>
               </button>
-              <button className="rounded-full bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 transition-colors">
+              <Button variant="outline" size="md" className="rounded-full">
                 Contact sales
                 <svg
                   className="ml-1 h-4 w-4 inline"
@@ -131,7 +134,7 @@ export default function Hero() {
                     d="M9 5l7 7-7 7"
                   />
                 </svg>
-              </button>
+              </Button>
             </div>
           </header>
 
@@ -247,12 +250,17 @@ export default function Hero() {
               </p>
 
               <div className="relative max-w-lg">
-                <input
+                <Input
                   type="email"
                   placeholder="Email address"
-                  className="w-full rounded-full border border-transparent bg-[#f6f9fb] pl-5 pr-32 py-4 text-[#3c4043] placeholder:text-gray-400 focus:border-[#0a2540] focus:ring-2 focus:ring-[#0a2540]/20 focus:outline-none text-base shadow-lg"
+                  className="bg-[#f6f9fb] text-[#3c4043] placeholder:text-gray-400 focus:border-[#0a2540] focus:ring-[#0a2540]/20 shadow-lg pr-32"
+                  size="md"
                 />
-                <button className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-[#0a2540] px-4 py-2 text-sm font-semibold text-white hover:bg-[#081d32] transition-colors whitespace-nowrap shadow-sm">
+                <Button
+                  variant="secondary"
+                  size="md"
+                  className="absolute right-2 top-1/2 -translate-y-1/2"
+                >
                   Start now
                   <svg
                     className="ml-1 h-3 w-3 inline"
@@ -267,7 +275,7 @@ export default function Hero() {
                       d="M9 5l7 7-7 7"
                     />
                   </svg>
-                </button>
+                </Button>
               </div>
             </div>
 
@@ -279,25 +287,31 @@ export default function Hero() {
 
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-16 items-center justify-items-center opacity-60 py-8">
               <div className="flex justify-center items-center px-4 py-2">
-                <img
+                <Image
                   src="/OpenAI_Logo.svg"
                   alt="OpenAI"
+                  width={120}
+                  height={24}
                   className="h-5 sm:h-6 w-auto"
                 />
               </div>
 
               <div className="flex justify-center items-center px-4 py-2">
-                <img
+                <Image
                   src="/Amazon_logo.svg"
                   alt="Amazon"
+                  width={120}
+                  height={24}
                   className="h-5 sm:h-6 w-auto"
                 />
               </div>
 
               <div className="flex justify-center items-center px-4 py-2">
-                <img
+                <Image
                   src="/Google_2015_logo.svg"
                   alt="Google"
+                  width={120}
+                  height={24}
                   className="h-5 sm:h-6 w-auto"
                 />
               </div>
@@ -314,17 +328,21 @@ export default function Hero() {
               </div>
 
               <div className="flex justify-center items-center px-4 py-2">
-                <img
+                <Image
                   src="/Shopify_logo_2018.svg"
                   alt="Shopify"
+                  width={120}
+                  height={24}
                   className="h-5 sm:h-6 w-auto"
                 />
               </div>
 
               <div className="flex justify-center items-center px-4 py-2">
-                <img
+                <Image
                   src="/Airbnb_Logo_Bélo.svg"
                   alt="Airbnb"
+                  width={120}
+                  height={24}
                   className="h-5 sm:h-6 w-auto"
                 />
               </div>
