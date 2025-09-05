@@ -14,6 +14,9 @@ const Growth = dynamic(() => import("./components/Growth"), {
 const Developers = dynamic(() => import("./components/Developers"), {
   ssr: true,
 });
+const NoCode = dynamic(() => import("./components/NoCode"), {
+  ssr: true,
+});
 
 export default function Home() {
   return (
@@ -24,6 +27,7 @@ export default function Home() {
       <Enterprise />
       <Growth />
       <Developers />
+      <NoCode />
     </main>
   );
 }
