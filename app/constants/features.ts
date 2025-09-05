@@ -25,7 +25,7 @@ export const features: FeatureData[] = [
       "Survey data synthesis",
       "Feedback theme extraction",
     ],
-    image: "/1.png",
+    image: "/1.svg",
   },
   {
     id: "roadmaps",
