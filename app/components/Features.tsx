@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import FeatureCard from "./FeatureCard";
-import DashboardVisual from "./DashboardVisual";
 import { features } from "../constants/features";
 
 const Features: React.FC = () => {
@@ -56,7 +55,7 @@ const Features: React.FC = () => {
     <>
       <section
         id="features-section"
-        className="py-24 bg-white"
+        className="py-24 bg-[#F6F9FC]"
         aria-labelledby="features-heading"
       >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -94,12 +93,7 @@ const Features: React.FC = () => {
                     description={feature.description}
                     buttonText={feature.buttonText}
                     seeAlso={feature.seeAlso}
-                    visualContent={
-                      <DashboardVisual
-                        title={feature.visual.title}
-                        items={feature.visual.items}
-                      />
-                    }
+                    image={feature.image}
                   />
                 </div>
               );

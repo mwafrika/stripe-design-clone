@@ -3,7 +3,7 @@ import React from "react";
 interface CardProps {
   children: React.ReactNode;
   className?: string;
-  padding?: "sm" | "md" | "lg";
+  padding?: "none" | "sm" | "md" | "lg";
   shadow?: "sm" | "md" | "lg" | "xl";
   border?: boolean;
 }
@@ -11,13 +11,14 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({
   children,
   className = "",
-  padding = "lg",
+  padding = "none",
   shadow = "sm",
   border = true,
 }) => {
   const baseClasses = "bg-white rounded-2xl";
 
   const paddingClasses = {
+    none: "",
     sm: "p-4",
     md: "p-6",
     lg: "p-8",

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Card from "./ui/Card";
 import Button from "./ui/Button";
 
@@ -10,7 +11,7 @@ interface FeatureCardProps {
   description: string;
   buttonText: string;
   seeAlso: string[];
-  visualContent: React.ReactNode;
+  image: string;
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({
@@ -21,7 +22,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   description,
   buttonText,
   seeAlso,
-  visualContent,
+  image,
 }) => {
   const getIconColorClasses = (color: string) => {
     const colors = {
@@ -37,26 +38,36 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       <div>
-        <Card>
+        <Card padding="lg">
           <div className="flex items-center gap-3 mb-4">
             <div
               className={`w-8 h-8 rounded-lg flex items-center justify-center ${getIconColorClasses(
                 iconColor
               )}`}
             >
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d={icon}
+              {icon.startsWith("/") ? (
+                <Image
+                  src={icon}
+                  alt={category}
+                  width={16}
+                  height={16}
+                  className="w-4 h-4"
                 />
-              </svg>
+              ) : (
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d={icon}
+                  />
+                </svg>
+              )}
             </div>
             <span className={`text-sm font-medium text-${iconColor}-600`}>
               {category}
@@ -97,7 +108,17 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
         </Card>
       </div>
       <div>
-        <Card>{visualContent}</Card>
+        <Card padding="none">
+          <div className="flex items-center justify-center">
+            <Image
+              src={image}
+              alt={title}
+              width={400}
+              height={300}
+              className="max-w-full w-full h-auto rounded-lg"
+            />
+          </div>
+        </Card>
       </div>
     </div>
   );
