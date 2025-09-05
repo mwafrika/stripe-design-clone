@@ -15,75 +15,75 @@ interface BusinessType {
 
 const businessTypes: BusinessType[] = [
   {
-    id: "banking",
-    title: "Banking-as-a-service",
+    id: "customer-research",
+    title: "Customer Research",
     description:
-      "Embed financial services, including accounts, cards, and lending, to create tailored in-product experiences for your customers.",
+      "Transform customer interviews, surveys, and feedback into structured insights and actionable product decisions with AI-powered analysis.",
     linkText: "Learn more",
-    logos: ["Karat", "shopify", "PERSONA"],
+    logos: ["Stripe", "Notion", "Figma"],
     logoImages: ["/openai.svg", "/amazon.svg", "/google.svg"],
   },
   {
-    id: "ecommerce",
-    title: "Ecommerce",
+    id: "product-insights",
+    title: "Product Insights",
     description:
-      "Access an optimized suite of tools to accept payments online and in person from customers around the world.",
+      "Turn qualitative customer conversations into quantitative insights that drive product strategy and feature prioritization.",
     linkText: "Learn more",
-    logos: ["Glossier.", "dermalogica", "INDOCHINO"],
+    logos: ["Slack", "Airtable", "Linear"],
     logoImages: ["/anthropic.svg", "/marriott.svg", "/shopify.svg"],
   },
   {
-    id: "crypto",
-    title: "Crypto",
+    id: "feedback-analysis",
+    title: "Feedback Analysis",
     description:
-      "Embed crypto purchase flows into your checkout flow—with authorization optimization and fraud protection built in.",
+      "Automatically analyze and synthesize customer feedback from multiple sources to identify patterns and themes.",
     linkText: "Learn more",
-    logos: ["Blockchain.com"],
+    logos: ["Intercom", "Zendesk"],
     logoImages: ["/airbnb.svg"],
   },
   {
-    id: "marketplace",
-    title: "Marketplace",
+    id: "user-interviews",
+    title: "User Interviews",
     description:
-      "Connect buyers and sellers with a complete payments platform that scales with your marketplace business.",
+      "Streamline interview analysis with AI that extracts key insights, themes, and evidence from customer conversations.",
     linkText: "Learn more",
-    logos: ["deliveroo", "Airbnb", "Uber"],
+    logos: ["Calendly", "Zoom", "Loom"],
     logoImages: ["/uber.svg", "/airbnb.svg", "/shopify.svg"],
   },
   {
-    id: "saas",
-    title: "SaaS",
+    id: "survey-synthesis",
+    title: "Survey Synthesis",
     description:
-      "Build and scale subscription-based software with flexible billing, invoicing, and revenue recognition tools.",
+      "Process and analyze survey responses at scale to uncover user needs, pain points, and opportunities for improvement.",
     linkText: "Learn more",
-    logos: ["Slack", "Notion", "Figma"],
+    logos: ["Typeform", "SurveyMonkey", "Google Forms"],
     logoImages: ["/openai.svg", "/google.svg", "/anthropic.svg"],
   },
   {
-    id: "marketplace-2",
-    title: "Marketplace",
+    id: "product-decisions",
+    title: "Product Decisions",
     description:
-      "Connect buyers and sellers with a complete payments platform that scales with your marketplace business.",
+      "Make data-driven product decisions backed by comprehensive customer research and evidence-based insights.",
     linkText: "Learn more",
-    logos: ["deliveroo", "Airbnb", "Uber"],
+    logos: ["Jira", "Asana", "Monday.com"],
     logoImages: ["/marriott.svg", "/shopify.svg", "/uber.svg"],
   },
   {
-    id: "fintech",
-    title: "Fintech",
+    id: "team-collaboration",
+    title: "Team Collaboration",
     description:
-      "Launch financial products with compliance, risk management, and regulatory tools built for modern finance.",
+      "Share insights across your product team with structured reports and collaborative research workflows.",
     linkText: "Learn more",
-    logos: ["Plaid", "Chime", "Robinhood"],
+    logos: ["Notion", "Confluence", "Miro"],
     logoImages: ["/google.svg", "/amazon.svg", "/openai.svg"],
   },
   {
-    id: "gaming",
-    title: "Gaming",
+    id: "ai-research",
+    title: "AI Research",
     description:
-      "Monetize games with in-app purchases, subscriptions, and virtual economies that scale globally.",
+      "Leverage AI to accelerate research analysis and turn hours of manual work into minutes of automated insights.",
     linkText: "Learn more",
-    logos: ["Epic Games", "Unity", "Roblox"],
+    logos: ["OpenAI", "Anthropic", "Claude"],
     logoImages: ["/anthropic.svg", "/marriott.svg", "/airbnb.svg"],
   },
 ];
@@ -121,11 +121,12 @@ const BusinessTypes: React.FC = () => {
         <div className="flex items-start justify-between mb-16">
           <div className="max-w-2xl">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Support for any business type
+              Research workflows for every team
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              From global AI companies to category-defining marketplaces,
-              successful businesses across industries grow and scale with Sque.
+              From customer interviews to survey analysis, Sque helps product
+              teams turn qualitative feedback into quantitative insights that
+              drive better decisions.
             </p>
           </div>
 

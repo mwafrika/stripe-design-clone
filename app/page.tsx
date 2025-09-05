@@ -5,6 +5,9 @@ const Features = dynamic(() => import("./components/Features"), { ssr: true });
 const BusinessTypes = dynamic(() => import("./components/BusinessTypes"), {
   ssr: true,
 });
+const Enterprise = dynamic(() => import("./components/Enterprise"), {
+  ssr: true,
+});
 
 export default function Home() {
   return (
@@ -12,6 +15,7 @@ export default function Home() {
       <Hero />
       <Features />
       <BusinessTypes />
+      <Enterprise />
     </main>
   );
 }
