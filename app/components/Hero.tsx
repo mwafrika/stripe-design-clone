@@ -238,7 +238,6 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Description text and form in the white diagonal area */}
           <div className="relative z-10 pt-0 pb-20">
             <div className="max-w-2xl mx-auto lg:mx-0 mb-12">
               <p className="text-xl text-[#3c4043] leading-relaxed mb-8">
@@ -278,24 +277,62 @@ export default function Hero() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center opacity-60">
-              {[
-                "OpenAI",
-                "amazon",
-                "Google",
-                "ANTHROPIC",
-                "Marriott",
-                "shopify",
-                "airbnb",
-                "UBER",
-              ].map((company) => (
-                <div
-                  key={company}
-                  className="text-gray-800 font-medium text-sm text-center"
-                >
-                  {company}
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-16 items-center justify-items-center opacity-60 py-8">
+              <div className="flex justify-center items-center px-4 py-2">
+                <img
+                  src="/OpenAI_Logo.svg"
+                  alt="OpenAI"
+                  className="h-5 sm:h-6 w-auto"
+                />
+              </div>
+
+              <div className="flex justify-center items-center px-4 py-2">
+                <img
+                  src="/Amazon_logo.svg"
+                  alt="Amazon"
+                  className="h-5 sm:h-6 w-auto"
+                />
+              </div>
+
+              <div className="flex justify-center items-center px-4 py-2">
+                <img
+                  src="/Google_2015_logo.svg"
+                  alt="Google"
+                  className="h-5 sm:h-6 w-auto"
+                />
+              </div>
+              <div className="flex justify-center items-center px-4 py-2">
+                <div className="text-gray-800 font-medium text-xs sm:text-sm text-center">
+                  ANTHROPIC
                 </div>
-              ))}
+              </div>
+
+              <div className="flex justify-center items-center px-4 py-2">
+                <div className="text-gray-800 font-medium text-xs sm:text-sm text-center">
+                  Marriott
+                </div>
+              </div>
+
+              <div className="flex justify-center items-center px-4 py-2">
+                <img
+                  src="/Shopify_logo_2018.svg"
+                  alt="Shopify"
+                  className="h-5 sm:h-6 w-auto"
+                />
+              </div>
+
+              <div className="flex justify-center items-center px-4 py-2">
+                <img
+                  src="/Airbnb_Logo_Bélo.svg"
+                  alt="Airbnb"
+                  className="h-5 sm:h-6 w-auto"
+                />
+              </div>
+              <div className="flex justify-center items-center px-4 py-2">
+                <div className="text-gray-800 font-medium text-xs sm:text-sm text-center">
+                  UBER
+                </div>
+              </div>
             </div>
           </div>
         </div>
